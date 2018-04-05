@@ -29,10 +29,16 @@ class ChatConsumer(WebsocketConsumer):
     # Receive message from WebSocket
     def receive(self, text_data):
         text_data_json = json.loads(text_data)
+
         message = text_data_json['message']
+        xdata=text_data_json['data_x']
+        ydata = text_data_json['data_y']
+        zdata = text_data_json['data_z']
+        device = text_data_json['device_id']
 
         #SAVE DATA
-        # acce_data.objects.create(device_id=message,data_x='1',data_y='2',data_z='3')
+        acce_data.objects.create(device_id=device,data_x=xdata,data_y=ydata,data_z=zdata)
+
         print(text_data)
 
 
@@ -42,15 +48,27 @@ class ChatConsumer(WebsocketConsumer):
             self.room_group_name,
             {
                 'type': 'chat_message',
-                'message': message
+                'message': message,
+                'device_id': device,
+                'data_x': xdata,
+                'data_y': ydata,
+                'data_z': zdata
             }
         )
 
     # Receive message from room group
     def chat_message(self, event):
         message = event['message']
-
+        xdata = event['data_x']
+        ydata = event['data_y']
+        zdata = event['data_z']
+        device = event['device_id']
+        print("When are we working")
         # Send message to WebSocket
         self.send(text_data=json.dumps({
-            'message': message
+            'message': message,
+            'device_id': device,
+            'data_x': xdata,
+            'data_y': ydata,
+            'data_z': zdata
         }))
