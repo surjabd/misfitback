@@ -8,6 +8,19 @@ from rest_framework import status
 from rest_framework.authtoken.models import Token
 from .serializers import acce_dataSerializer
 from .models import acce_data
+from django.shortcuts import render
+from django.utils.safestring import mark_safe
+import json
+
+
+def index(request):
+    return render(request, 'chat/index.html', {})
+
+
+def room(request, room_name):
+    return render(request, 'chat/room.html', {
+        'room_name_json': mark_safe(json.dumps(room_name))
+    })
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -16,6 +29,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
+
 
 @api_view(['POST'])
 def login_user(request):
