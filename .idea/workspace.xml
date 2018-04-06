@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2e929a-34d6-48d1-9067-d35b16281b62" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Data/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/consumers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,6 +87,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,18 +141,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_acce_data" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data_acce_data" pinned="false" current-in-tab="false">
         <entry file="das://12a38c0e-c913-47d8-98e7-68f0423246ec/schema/main/table/data_acce_data">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/admin.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
@@ -311,12 +315,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49703503" visible="true" weight="0.32889345" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811321" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49703503" weight="0.32889345" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811321" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32991803" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959569" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959569" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.32991913" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.32991913" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973047" weight="0.32991803" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -636,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Demo/lib/python3.5/site-packages/channels/routing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -758,6 +755,13 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
